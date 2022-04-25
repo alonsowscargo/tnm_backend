@@ -1,0 +1,4 @@
+System.Net.WebException: The remote server returned an error: (500) Internal Server Error.
+   at System.Net.HttpWebRequest.GetResponse()
+   at Invoice.GetRequestStream(String url, String json) in C:\websites\emax5\wsv\Invoice.asmx:line 179
+   at Invoice.DownloadPdf(String AliasName, String UserName, String Password, String Company, Int32 DocumentNumber) in C:\websites\emax5\wsv\Invoice.asmx:line 559

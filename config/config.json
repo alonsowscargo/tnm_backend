@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "p0stgr3s.n0djs.r00t",
+    "database": "tnm",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "p0stgr3s.n0djs.r00t",
+    "database": "tnm",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "p0stgr3s.n0djs.r00t",
+    "database": "tnm",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
