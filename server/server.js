@@ -29,6 +29,12 @@ app.use(cors())
 app.use(fileupload());
 app.use(require('./routes/index'))
 
+app.use(( err, req, res, next) => {
+  return res.json({
+    message: err.mesaage
+  })
+})
+
 app.get('/', function (req, res) {
   res.json('Bienvenido al server express')
 })

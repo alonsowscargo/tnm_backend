@@ -24,7 +24,9 @@ exports.create = async (req, res) => {
           return;
     }
 
-    const existUser=await client.query("SELECT * FROM public.usuario where usuario='"+req.body.usuario+"'");
+
+    const existUser = await client.query("SELECT * FROM public.usuario where usuario='"+req.body.usuario+"'");
+
     if(existUser.rows && existUser.rows.length>0){
          res.status(400).send({ message: "YA EXISTEN REGISTROS ASOCIADOS AL NOMBRE DE USUARIO INGRESADO", success:false, });
         res.end(); res.connection.destroy();

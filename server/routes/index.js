@@ -14,4 +14,8 @@ app.use(require('./comunas'));
 app.use(require('./usuarioNotas'));
 app.use(require('./roles'));
 app.use(require('./dashboard'));
+app.use(require('./task'));
+// app.use(require('./controlServicio'));
+
+
 module.exports=app;
